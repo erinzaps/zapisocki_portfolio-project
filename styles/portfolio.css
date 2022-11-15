@@ -22,7 +22,15 @@ h6 {
 }
 
 h1 {
-  font-size: 52;
+  font-size: 38px;
+}
+
+h3 {
+  padding-left: 100px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 p {
@@ -33,7 +41,7 @@ p {
 .hero {
   background: var(--primary-colour);
   text-align: left;
-  padding: 100px 25px;
+  padding: 100px 100px;
 }
 
 .hero h2 {
@@ -43,21 +51,48 @@ p {
   color: var(--secondary-contrast-color);
 }
 
-.btn-primary {
-  background: var(--secondary-colour);
-  border: var(--secondary-colour);
+.btn {
   border-radius: 0px;
-  font-size: 18px;
-  line-height: 27px;
   padding: 12px 36px;
   font-family: var(--general-font-family);
   font-weight: 300;
-  color: var(--primary-contrast-color);
   padding: 5px 40px;
+}
+
+.btn-primary {
+  background: var(--secondary-colour);
+  border: var(--secondary-colour);
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--primary-contrast-color);
 }
 
 .btn-primary:hover {
   color: var(--secondary-colour);
   border: var(--primary-contrast-color);
   background: var(--primary-contrast-color);
+}
+
+.btn-secondary {
+  color: var(--primary-contrast-color);
+  background: var(--secondary-colour);
+  border: var(--secondary-colour);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 22px;
+}
+
+.btn-secondary:hover {
+  color: var(--secondary-colour);
+  border: var(--secondary-contrast-color);
+  background: var(--secondary-contrast-color);
+}
+
+.container {
+  margin: 0px;
+  padding-left: 100px;
+}
+
+.article-description p {
+  font-size: 14px;
 }
