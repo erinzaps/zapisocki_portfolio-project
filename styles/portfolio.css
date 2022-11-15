@@ -25,10 +25,6 @@ h1 {
   font-size: 38px;
 }
 
-h3 {
-  padding-left: 100px;
-}
-
 h4 {
   font-size: 18px;
 }
@@ -42,6 +38,10 @@ p {
   background: var(--primary-colour);
   text-align: left;
   padding: 100px 100px;
+}
+
+.non-hero {
+  padding: 0px 100px;
 }
 
 .hero h2 {
@@ -90,9 +90,22 @@ p {
 
 .container {
   margin: 0px;
-  padding-left: 100px;
+}
+
+.article-img {
+  padding: 0px;
+}
+
+.article-description {
+  padding-left: 30px;
 }
 
 .article-description p {
   font-size: 14px;
 }
+
+/* @media (max-width: 960px) {
+  .hero {
+    padding-left: 40px;
+  }
+} */
