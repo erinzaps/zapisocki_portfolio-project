@@ -129,5 +129,6 @@ p {
 
   .article-description p {
     margin-bottom: 10px;
+    width: 100%;
   }
 }
