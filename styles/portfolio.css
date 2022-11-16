@@ -2,7 +2,7 @@
   --primary-colour: #e3ded8;
   --secondary-colour: #f8f3ed;
   --primary-contrast-color: #21242a;
-  --secondary-contrast-color: #6e6259;
+  --secondary-contrast-color: #4c4642;
   --heading-font-family: "Playfair Display", serif;
   --general-font-family: "Khula", sans-serif;
 }
@@ -21,20 +21,16 @@ h6 {
   color: var(--primary-contrast-color);
 }
 
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
 h4 {
   font-size: 18px;
 }
 
 p {
-  font-family: var(--general-font-family);
-  font-weight: 300;
-}
-
-.about-content ul {
-  list-style: none;
-  padding: 0px;
-  padding-left: 10px;
-  font-size: 12px;
   font-family: var(--general-font-family);
   font-weight: 300;
 }
@@ -49,30 +45,64 @@ p {
   padding: 0px 100px;
 }
 
-.about-hero {
-  background: var(--primary-colour);
-  text-align: left;
-  padding: 100px 100px 0px;
-}
-
-.about-non-hero {
-  background: var(--primary-colour);
-  padding: 0px 100px;
-}
-
 .hero h1 {
   font-size: 38px;
 }
 
-.about-hero h1 {
-  margin: 0px;
-}
-
-.hero h2 {
+.hero h2,
+.about-hero h2 {
   font-family: var(--general-font-family);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 18px;
   color: var(--secondary-contrast-color);
+}
+
+.article-img {
+  padding: 0px;
+}
+
+.article-description {
+  padding-left: 30px;
+}
+
+.article-description p {
+  font-size: 14px;
+}
+
+.about-page {
+  background: var(--primary-colour);
+  padding-bottom: 100px;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: var(--general-font-family);
+  font-weight: 400;
+}
+
+.about-hero {
+  text-align: left;
+  padding: 100px 100px 50px;
+}
+
+.about-non-hero {
+  padding: 0px 100px;
+}
+
+.about-hero h1 {
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.about-hero h2 {
+}
+
+.about-img {
+  max-width: fit-content;
+  padding: 0;
 }
 
 .btn {
@@ -82,12 +112,19 @@ p {
   font-weight: 300;
 }
 
+.btn-primary:active:focus {
+  color: #ffffff;
+  background-color: #161617;
+  border-color: #494f57;
+}
+
 .btn-primary {
   background: var(--secondary-colour);
   border: var(--secondary-colour);
   font-size: 14px;
   line-height: 30px;
   color: var(--primary-contrast-color);
+  font-style: italic;
 }
 
 .btn-primary:hover {
@@ -111,48 +148,71 @@ p {
   background: var(--secondary-contrast-color);
 }
 
-.article-img {
-  padding: 0px;
-}
-
-.article-description {
-  padding-left: 30px;
-}
-
-.article-description p {
-  font-size: 14px;
-}
-
-.about-img {
-  max-width: fit-content;
-  padding: 0;
+.get-in-touch {
+  margin-top: 50px;
 }
 
 @media (max-width: 960px) {
-  .hero {
+  .hero,
+  .non-hero,
+  .about-hero {
     text-align: center;
-    padding: 50px 30px;
+    padding: 50px 50px;
   }
 
-  .hero h1 {
+  .about-hero {
+    padding-bottom: 0px;
+  }
+
+  .hero h1,
+  .about-hero h1 {
     font-size: 32px;
+  }
+
+  .about-hero h1 {
+    margin-bottom: 50px;
   }
 
   .hero h2 {
     font-size: 14px;
   }
 
+  .non-hero h3 {
+    padding: 0px 50px;
+    text-align: center;
+  }
+
   .non-hero {
-    padding: 0px 30px;
+    padding: 0px 50px;
+  }
+
+  .article {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
   }
 
   .article-description {
-    padding: 0px;
-    width: 100%;
-  }
-
-  .article-description p {
     margin-bottom: 10px;
     width: 100%;
+    padding: 0px;
+  }
+
+  .about-non-hero {
+    padding: 0px 50px;
+  }
+
+  .about-content {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .about-img {
+    padding-bottom: 25px;
+  }
+
+  .get-in-touch {
+    text-align: center;
+    margin-top: 25px;
   }
 }
