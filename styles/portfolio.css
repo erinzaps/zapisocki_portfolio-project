@@ -35,6 +35,30 @@ p {
   font-weight: 300;
 }
 
+ul {
+  list-style: none;
+  padding: 0px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: var(--general-font-family);
+  font-weight: 400;
+}
+
+.primary-page {
+  background-color: var(--primary-colour);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.primary-page h1 {
+  margin: 50px 0px 10px;
+}
+
+.primary-page h2 {
+  margin: 0px 0px 50px;
+}
+
 .hero {
   background: var(--primary-colour);
   text-align: left;
@@ -50,7 +74,7 @@ p {
 }
 
 .hero h2,
-.about-hero h2 {
+.content h2 {
   font-family: var(--general-font-family);
   font-weight: 600;
   font-size: 18px;
@@ -67,42 +91,6 @@ p {
 
 .article-description p {
   font-size: 14px;
-}
-
-.about-page {
-  background: var(--primary-colour);
-  padding-bottom: 100px;
-}
-
-.about-content ul {
-  list-style: none;
-  padding: 0px;
-  padding-left: 10px;
-  font-size: 12px;
-  font-family: var(--general-font-family);
-  font-weight: 400;
-}
-
-.about-hero {
-  text-align: left;
-  padding: 100px 100px 50px;
-}
-
-.about-non-hero {
-  padding: 0px 100px;
-}
-
-.about-hero h1 {
-  padding: 0;
-  margin-bottom: 8px;
-}
-
-.about-hero h2 {
-}
-
-.about-img {
-  max-width: fit-content;
-  padding: 0;
 }
 
 .btn {
@@ -150,27 +138,18 @@ p {
 
 .get-in-touch {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 960px) {
   .hero,
-  .non-hero,
-  .about-hero {
+  .non-hero {
     text-align: center;
     padding: 50px 50px;
   }
 
-  .about-hero {
-    padding-bottom: 0px;
-  }
-
-  .hero h1,
-  .about-hero h1 {
+  .hero h1 {
     font-size: 32px;
-  }
-
-  .about-hero h1 {
-    margin-bottom: 50px;
   }
 
   .hero h2 {
@@ -198,21 +177,24 @@ p {
     padding: 0px;
   }
 
-  .about-non-hero {
-    padding: 0px 50px;
+  .content {
+    text-align: center;
   }
 
-  .about-content {
-    padding: 0px;
+  .primary-page {
     text-align: center;
   }
 
   .about-img {
-    padding-bottom: 25px;
+    text-align: center;
+    margin: 0;
   }
 
   .get-in-touch {
-    text-align: center;
-    margin-top: 25px;
+    margin-top: 0px;
+  }
+
+  ul {
+    padding: 20px 0px 0px;
   }
 }
