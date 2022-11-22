@@ -46,8 +46,6 @@ ul {
 
 .primary-page {
   background-color: var(--primary-colour);
-  margin: 0;
-  padding: 0;
   display: flex;
 }
 
@@ -57,6 +55,11 @@ ul {
 
 .primary-page h2 {
   margin: 0px 0px 50px;
+}
+
+.primary-page h3 {
+  font-size: 18px;
+  text-transform: none;
 }
 
 .hero {
