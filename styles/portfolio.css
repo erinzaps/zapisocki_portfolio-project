@@ -62,6 +62,14 @@ ul {
   text-transform: none;
 }
 
+#manifesto {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--secondary-contrast-color);
+  opacity: 50%;
+}
+
 .hero {
   background: var(--primary-colour);
   text-align: left;
@@ -144,7 +152,7 @@ ul {
   margin-bottom: 50px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .hero,
   .non-hero {
     text-align: center;
@@ -186,6 +194,10 @@ ul {
 
   .primary-page {
     text-align: center;
+  }
+
+  .primary-page h1 {
+    margin-bottom: 50px !important;
   }
 
   .about-img {
