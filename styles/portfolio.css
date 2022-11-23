@@ -30,7 +30,8 @@ h4 {
   font-size: 18px;
 }
 
-p {
+p,
+a {
   font-family: var(--general-font-family);
   font-weight: 300;
 }
@@ -59,7 +60,6 @@ ul {
 
 .primary-page h3 {
   font-size: 18px;
-  text-transform: none;
 }
 
 #manifesto {
