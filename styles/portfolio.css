@@ -58,6 +58,16 @@ ul {
   margin: 0px 0px 50px;
 }
 
+.logo {
+  max-width: 50px;
+}
+
+.nav-menu {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
 .content.work h3 {
   font-size: 18px;
   text-transform: none;
