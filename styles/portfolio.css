@@ -116,6 +116,7 @@ footer .inquiry-box p {
 }
 
 footer a {
+  font-family: var(--heading-font-family);
   text-decoration: none;
   color: var(--primary-colour);
   transition: all 100ms ease-in-out;
@@ -321,8 +322,18 @@ footer .icon {
     font-size: 10px;
     text-align: center;
   }
-}
 
-nav li {
-  margin-left: 12px;
+  nav li {
+    margin-left: 12px;
+  }
+
+  footer {
+    margin: 0px 50px;
+  }
+
+  footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--primary-contrast-color);
+  }
 }
