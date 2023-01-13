@@ -336,4 +336,8 @@ footer .icon {
     text-decoration: none;
     color: var(--primary-contrast-color);
   }
+
+  footer .icon {
+    padding-left: 15px;
+  }
 }
