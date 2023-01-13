@@ -30,6 +30,10 @@ h4 {
   font-size: 18px;
 }
 
+h5 {
+  font-size: 16px;
+}
+
 p,
 a {
   font-family: var(--general-font-family);
@@ -98,6 +102,33 @@ nav ul {
   font-size: 14px;
 }
 
+footer {
+  margin: 0px 100px;
+}
+
+footer .inquiry-box {
+  border: 1px solid rgb(76, 70, 66, 0.1);
+  padding: 40px 60px;
+}
+
+footer .inquiry-box p {
+  margin: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-colour);
+  transition: all 100ms ease-in-out;
+}
+
+footer a:hover {
+  color: var(--secondary-contrast-color);
+}
+
+footer .icon {
+  padding-left: 5px;
+}
+
 .nav-menu {
   display: inline;
   padding: 0;
@@ -148,6 +179,7 @@ nav ul {
   padding: 12px 36px;
   font-family: var(--general-font-family);
   font-weight: 300;
+  transition: all 100ms ease-in-out;
 }
 
 .btn-primary:active:focus {
@@ -184,6 +216,21 @@ nav ul {
   color: var(--secondary-colour);
   border: var(--secondary-contrast-color);
   background: var(--secondary-contrast-color);
+}
+
+.btn-tertiary {
+  background: var(--primary-contrast-color);
+  border: var(--primary-contrast-color);
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--primary-colour);
+  font-style: italic;
+}
+
+.btn-tertiary:hover {
+  color: var(--primary-contrast-color);
+  border: var(--primary-colour);
+  background: var(--primary-colour);
 }
 
 .get-in-touch {
