@@ -115,19 +115,33 @@ footer .inquiry-box p {
   margin: 0px;
 }
 
-footer a {
+footer a,
+.author a {
   font-family: var(--heading-font-family);
   text-decoration: none;
   color: var(--primary-colour);
   transition: all 100ms ease-in-out;
 }
 
-footer a:hover {
+footer a:hover,
+.author a:hover {
   color: var(--secondary-contrast-color);
 }
 
 footer .icon {
   padding-left: 5px;
+}
+
+.author {
+  text-align: center;
+  color: var(--primary-colour);
+  font-size: 12px;
+}
+
+.author a {
+  font-family: var(--general-font-family);
+  text-decoration: underline var(--primary-colour)
+    dotted;
 }
 
 .nav-menu {
