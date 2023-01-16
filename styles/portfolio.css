@@ -94,6 +94,8 @@ nav a {
 nav a:hover,
 nav li.active a {
   color: var(--primary-contract-color);
+  text-decoration: underline
+    var(--primary-contrast-color) dotted;
 }
 
 nav ul {
@@ -119,13 +121,13 @@ footer a,
 .author a {
   font-family: var(--heading-font-family);
   text-decoration: none;
-  color: var(--primary-colour);
+  color: var(--secondary-contrast-color);
   transition: all 100ms ease-in-out;
 }
 
 footer a:hover,
 .author a:hover {
-  color: var(--secondary-contrast-color);
+  color: var(--primary-contrast-color);
 }
 
 footer .icon {
@@ -134,14 +136,14 @@ footer .icon {
 
 .author {
   text-align: center;
-  color: var(--primary-colour);
-  font-size: 12px;
+  color: var(--primary-contrast-colour);
+  font-size: 8px;
 }
 
 .author a {
   font-family: var(--general-font-family);
-  text-decoration: underline var(--primary-colour)
-    dotted;
+  text-decoration: underline
+    var(--secondary-contrast-color) dotted;
 }
 
 .nav-menu {
@@ -155,10 +157,18 @@ footer .icon {
   text-transform: none;
 }
 
-.hero {
+.hero,
+.content {
   background: var(--primary-colour);
   text-align: left;
+}
+
+.hero {
   padding: 100px 100px;
+}
+
+.content {
+  padding: 25px 100px;
 }
 
 .non-hero {
@@ -173,7 +183,7 @@ footer .icon {
 .content h2 {
   font-family: var(--general-font-family);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 12px;
   color: var(--secondary-contrast-color);
 }
 
@@ -297,14 +307,6 @@ footer .icon {
     padding: 0px;
   }
 
-  .content {
-    text-align: center;
-  }
-
-  .primary-page {
-    text-align: center;
-  }
-
   .primary-page h1 {
     margin-bottom: 50px !important;
   }
@@ -316,6 +318,11 @@ footer .icon {
 
   .get-in-touch {
     margin-top: 0px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0px 40px;
   }
 
   ul {
