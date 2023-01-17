@@ -72,7 +72,8 @@ nav a:hover,
 nav li.active a,
 .contact a,
 .post a,
-.more-content a {
+.more-content a,
+footer .email-link {
   color: var(--primary-contract-color);
   text-decoration: underline
     var(--primary-contrast-color) dotted;
@@ -125,12 +126,6 @@ footer .icon {
 
 .primary-page h2 {
   margin: 0px 0px 50px;
-}
-
-.read-time {
-  opacity: 50%;
-  padding-left: 10px;
-  font-style: italic;
 }
 
 .logo {
@@ -318,13 +313,14 @@ footer .icon {
     font-size: 14px;
   }
 
-  .non-hero h3 {
-    padding: 0px 50px;
-    text-align: center;
-  }
-
   .non-hero {
     padding: 0px 50px;
+  }
+
+  .non-hero h3,
+  .post {
+    padding: 0px 50px;
+    text-align: center;
   }
 
   .article {
