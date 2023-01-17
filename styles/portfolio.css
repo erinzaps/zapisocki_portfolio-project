@@ -73,7 +73,7 @@ ul {
 }
 
 nav {
-  padding: 30px 0px 0px;
+  padding: 30px 0px 30px;
 }
 
 nav li {
@@ -92,7 +92,8 @@ nav a {
 }
 
 nav a:hover,
-nav li.active a {
+nav li.active a,
+.contact a {
   color: var(--primary-contract-color);
   text-decoration: underline
     var(--primary-contrast-color) dotted;
